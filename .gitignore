@@ -17,6 +17,8 @@ dist/
 # Maven
 target/
 
+.git
+
 # JetBrains IDE
 .idea/
 out/
@@ -46,4 +48,3 @@ Thumbs.db
 *.mp3
 *.form
 
-.git

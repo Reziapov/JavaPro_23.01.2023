@@ -11,7 +11,6 @@ public class Animal {
     private int distanceRun;
     private int distanceSwim;
 
-
     public String getName() {
         return name;
     }
@@ -37,18 +36,5 @@ public class Animal {
         if (animal instanceof Swimmable) {
             ((Swimmable) animal).swim();
         }
-    }
-
-    public static int counterDog = 0;
-    public static int counterCat = 0;
-
-    public void sumDog(String name){
-        this.name = name;
-        counterDog++;
-    }
-
-    public void sumCat(String name){
-        this.name = name;
-        counterCat++;
     }
 }

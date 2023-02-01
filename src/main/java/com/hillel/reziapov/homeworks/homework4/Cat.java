@@ -26,6 +26,6 @@ public class Cat extends Animal implements Runnable, Swimmable {
     @Override
     public void swim() {
         System.out.println(getName() + " не вміє плавати");
-
     }
+
 }

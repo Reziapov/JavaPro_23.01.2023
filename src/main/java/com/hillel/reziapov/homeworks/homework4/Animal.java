@@ -11,6 +11,10 @@ public class Animal {
     private int distanceRun;
     private int distanceSwim;
 
+    public Animal() {
+
+    }
+
     public String getName() {
         return name;
     }

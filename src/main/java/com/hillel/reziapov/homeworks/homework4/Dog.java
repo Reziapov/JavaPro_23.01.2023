@@ -8,13 +8,9 @@ public class Dog extends Animal implements Runnable, Swimmable {
         return counterDog;
     }
 
-    public Dog(String name) {
-        this.name = name;
-        counterDog++;
-    }
-
     public Dog(String name, int distanceRun, int distanceSwim) {
         super(name, distanceRun, distanceSwim);
+        counterDog++;
     }
 
     @Override

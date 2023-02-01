@@ -8,14 +8,9 @@ public class Cat extends Animal implements Runnable, Swimmable {
         return counterCat;
     }
 
-    public Cat(String name) {
-        this.name = name;
-        counterCat++;
-    }
-
-
     public Cat(String name, int distanceRun, int distanceSwim) {
         super(name, distanceRun, distanceSwim);
+        counterCat++;
     }
 
     @Override

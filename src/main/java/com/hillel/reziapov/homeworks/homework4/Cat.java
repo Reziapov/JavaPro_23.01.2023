@@ -1,6 +1,6 @@
 package com.hillel.reziapov.homeworks.homework4;
 
-public class Cat extends Animal implements Runnable, Swimmable {
+public class Cat extends Animal {
 
     private static int counterCat = 0;
 
@@ -8,17 +8,11 @@ public class Cat extends Animal implements Runnable, Swimmable {
         return counterCat;
     }
 
-    public Cat(String name, int distanceRun, int distanceSwim) {
-        super(name, distanceRun, distanceSwim);
+    public Cat(String name) {
+        super(name);
         counterCat++;
     }
 
-    @Override
-    public void run() {
-        System.out.println(getName() + " пробіг " + getDistanceRun() + " метрів");
-    }
-
-    @Override
     public void swim() {
         System.out.println(getName() + " не вміє плавати");
     }
